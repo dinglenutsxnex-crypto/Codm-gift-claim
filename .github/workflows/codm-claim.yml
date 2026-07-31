@@ -1,0 +1,41 @@
+name: CODM Daily Claim
+
+on:
+  schedule:
+    - cron: "30 6 * * *"   # daily 06:30 UTC (~12:00 IST)
+  workflow_dispatch:       # manual run from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  claim:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Claim
+        id: claim
+        run: |
+          mkdir -p output
+          ts="$(date +%Y-%m-%d)"
+          set +e
+          python3 codm_claim.py Epstien_team --json > "output/claim-${ts}.json" 2> "output/claim-${ts}.log"
+          rc=$?
+          set -e
+          echo "claim_exit_code=${rc}" >> "${GITHUB_OUTPUT}"
+          cat "output/claim-${ts}.json"
+          [ "${rc}" -ne 3 ]
+
+      - name: Commit output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output
+          git diff --cached --quiet || {
+            git commit -m "chore(codm): claim results $(date +%Y-%m-%d)"
+            git push
+          }
