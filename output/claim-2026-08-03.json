@@ -1,0 +1,28 @@
+{
+  "player_id": "Epstien_team",
+  "region": "sa",
+  "country": "IN",
+  "profile": {
+    "username": "Epstien_team",
+    "shortId": "953LEM",
+    "picUrl": "https://lh3.googleusercontent.com/a/ACg8ocKnxfKH0jWWYC7LKWEtNrGkmM-ko5nYMdIxi85A5SLIFbgFDw=s96-c",
+    "levelImage": "https://cdn1.codashop.com/S/content/webstore/codm/images/icon_playerlevel.png",
+    "rank": "Grand Master IV",
+    "rankImage": "https://cdn1.codashop.com/S/content/webstore/codm/images/icon_pvp_ranking_6_rating_4.png"
+  },
+  "freebies": [
+    {
+      "skuId": "com.activision.callofduty.weekotov2_1k_0_0",
+      "name": "DAILY GIFT",
+      "status": "PURCHASE_LIMIT_REACHED",
+      "buyUrl": "https://order-sa.codashop.com/claim-freebie-reward",
+      "remaining": 0,
+      "limit": 1,
+      "refreshRate": 86400.0,
+      "refreshAtUnix": 1785801599
+    }
+  ],
+  "ok": false,
+  "step": "select",
+  "error": "no claimable freebie: DAILY GIFT (PURCHASE_LIMIT_REACHED, remaining 0)"
+}
