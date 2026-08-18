@@ -1,0 +1,50 @@
+{
+  "player_id": "Epstien_team",
+  "region": "sa",
+  "country": "IN",
+  "profile": {
+    "username": "Epstien_team",
+    "shortId": "953LEM",
+    "picUrl": "https://lh3.googleusercontent.com/a/ACg8ocKnxfKH0jWWYC7LKWEtNrGkmM-ko5nYMdIxi85A5SLIFbgFDw=s96-c",
+    "levelImage": "https://cdn1.codashop.com/S/content/webstore/codm/images/icon_playerlevel.png",
+    "rank": "Grand Master IV",
+    "rankImage": "https://cdn1.codashop.com/S/content/webstore/codm/images/icon_pvp_ranking_6_rating_4.png"
+  },
+  "freebies": [
+    {
+      "skuId": "com.activision.callofduty.webstore_18_0_0",
+      "name": "DAILY GIFT",
+      "status": "ACTIVE",
+      "buyUrl": "https://order-sa.codashop.com/claim-freebie-reward",
+      "remaining": 1,
+      "limit": 1,
+      "refreshRate": 86400.0,
+      "refreshAtUnix": 1787097600
+    },
+    {
+      "skuId": "com.activision.callofduty.weekotov2_1f_0_0",
+      "name": "FREE LEGENDARY CALLING CARD - UNSTOPPABLE",
+      "status": "PURCHASE_LIMIT_REACHED",
+      "buyUrl": "https://order-sa.codashop.com/claim-freebie-reward",
+      "remaining": 0,
+      "limit": 1,
+      "refreshRate": 8640000000.0,
+      "refreshAtUnix": 10425542399
+    }
+  ],
+  "ok": true,
+  "claims": [
+    {
+      "skuId": "com.activision.callofduty.webstore_18_0_0",
+      "name": "DAILY GIFT",
+      "ok": true,
+      "result_code": 0,
+      "result": "SUCCESS",
+      "response": {
+        "RESULT_CODE": 0,
+        "errorCode": "",
+        "errorMsg": ""
+      }
+    }
+  ]
+}
